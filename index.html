@@ -1,275 +1,64 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fi" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Digitalisaatio yhteiskunnassa</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
-
-    <style>
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-
-
-
-a, a:hover, a:focus, a:active {
-text-decoration: none;
-color: inherit;
-}
-/*
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-    }
-
-      header, main {
-        max-width: 80rem;
-      }*/
-
-      html {
-        font-size: 14pt;
-
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-      body {
-        font-family: 'Overpass', sans-serif;  
-        color:rgb(48, 48, 48);        
-        margin: 1rem;
-        padding: 1rem;
-      }
-
-      .lohko {
-        background-color: rgb(48, 48, 48);
-        color: rgb(255, 255, 255);
-        /*width: 20rem;*/
-        border-radius: 7px;
-        padding: 1rem;
-        
-
-      }
-
-      .suoritettu {
-        background-color: rgb(74, 181, 99);
-      }
-
-      .hylsy {
-        background-color: rgb(221, 66, 75);
-      }
-
-      .odottaa {
-        background-color: rgb(185, 185, 185);
-      }
-
-      .aktiivinen {
-        background-color: rgb(0, 38, 255);
-      }
-
-      .eiaktiivinen{
-        background-color: rgb(185, 185, 185);
-      }
-
-      .grid-containervanha {
-          display: flex;
-          margin: 0 auto;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-          max-width: 80rem;
-      }
-
-      .grid-container {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
-      }
-
-      .moi
-      {
-        max-width: 60rem;
-      }
-
-      .ikoni {
-        font-size: 200%;
-        transition: left ease 0.4s;
-        position: relative;
-        left: 0;
-    }
-
-    a>.aktiivinen:hover > .ikoni {
-  left: 1em;
-}
-
-    </style>
-
-    
+    <title>Digitalisaatio yhteiskunnassa 2023</title>
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
   </head>
+
   <body>
-    
-<header>
-  <div id="moi">
-    <p>
-        Moi [etunimi]! Tervetuloa kurssille! Aloita ensin tsekkaamalla ohjevideo alta ja sen jälkeen pääset suorittamaan ensimmäisen osuuden. 
-    </p>
-</div>
-</header>
+    <header class="container">
+        <h1>Digitalisaatio yhteiskunnassa</h1>
+    </header>
 
-<main>
-        <div class="grid-container">
-        <a href="#">
-            <div class="lohko suoritettu">
-                <p><strong>Kurssin aloitus ja oppimistavoitteet</strong></p>
-                <p>Valmis! Opettaja on hyväksynyt tehtävän.</p>
-                <i class="bi bi-hand-thumbs-up ikoni"></i>
-            </div>
-        </a>
+    <main class="container">
 
-        <a href="#">
-            <div class="lohko suoritettu">
-                <p><strong>#1 Datatalous, Minna Rantanen</strong></p>
-                <p>Valmis! Opettaja on hyväksynyt tehtävän.</p>
-                <i class="bi bi-hand-thumbs-up ikoni"></i>
-            </div>
-        </a>
+      <section id="status">
+        <h2>Moi [nimi]!</h2>
+        <p>Olet merkinnyt kurssin aktiviteeteista tehdyksi 2/14. Jatka samaan malliin!</p>
+        <progress id="progress-1" value="2" max="14"></progress>
+      </section>
 
+      <article id="johdanto">
+        <h2>Kurssin ohjeet ja pelisäännöt</h2>
+        <p>Tutustu ensimmäiseksi kurssin ohjeisiin. Voit avata varsinaisia tehtäviä ja podcast-jaksoja vasta kun olet tutustunut ohjeisiin ja merkinnyt tämän osuuden tehdyksi.</p>
+        <p><button>Avaa kurssin ohjeet ja pelisäännöt</button></p>
+        <footer style="background-color:#afa"><small>👍 Olet merkinnyt tämän tehdyksi 21.1.2023.</small></footer>
+      </article>
 
-        <a href="#">
-            <div class="lohko suoritettu">
-                <p><strong>#1 Datatalous, Minna Rantanen</strong></p>
-                <p>Valmis! Opettaja on hyväksynyt tehtävän.</p>
-                <i class="bi bi-hand-thumbs-up ikoni"></i>
-            </div>
-        </a>
+      <article id="pod-1" style="filter: blur(3px);">
+        <h2>#11 Tommi Savikko, älykodit</h2>
+        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
+        <p><button>Avaa tehtävät ja kuuntele jakso</button></p>
+        <footer style="background-color:#afa"><small>👍 Olet merkinnyt tämän tehdyksi 21.1.2023.</small></footer>
+      </article>
 
+      <article id="pod-2">
+        <h2>#11 Tommi Savikko, älykodit</h2>
+        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
+        <p><button>Avaa tehtävät ja kuuntele jakso</button></p>
+        <footer><small>Olet avannut tehtävän 18.1.2023 mutta et ole vielä merkinnyt sitä tehdyksi.</small></footer>
+      </article>
 
-        <a href="#">
-            <div class="lohko hylsy">
-                <p><strong>#1 Datatalous, Minna Rantanen</strong></p>
-                <p>Tehtävää pitää täydentää.</p>
-                <i class="bi bi-exclamation-circle ikoni"></i>
-            </div>
-        </a>
+      <article id="pod-3">
+        <h2>#11 Tommi Savikko, älykodit</h2>
+        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
+        <p><button>Avaa tehtävät ja kuuntele jakso</button></p>
+      </article>
 
+      <article id="pod-4">
+        <h2>#11 Tommi Savikko, älykodit</h2>
+        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
+        <p><button>Avaa tehtävät ja kuuntele jakso</button></p>
+      </article>
 
-        <a href="#">
-            <div class="lohko odottaa">
-                <p><strong>#1 Datatalous, Minna Rantanen</strong></p>
-                <p>Odottaa opettajan hyväksyntää.</p>
-                <i class="bi bi-clock-history ikoni"></i>
-            </div>
-        </a>
-
-
-        <a href="#">
-            <div class="lohko aktiivinen">
-                <p><strong>#1 Datatalous, Minna Rantanen</strong></p>
-                <p>Tee tämä tehtävä seuraavaksi.</p>
-                <i class="bi bi-arrow-right-circle ikoni"></i>
-                
-            </div>
-        </a>
-
-
-            <div class="lohko eiaktiivinen">
-                <p><strong>#1 Datatalous, Minna Rantanen</strong></p>
-                <p>Tämä tehtävä ei ole vielä aktiivinen. Se aukeaa kun olet suorittanut edeltävät tehtävät.</p>
-                <i class="bi bi-slash-circle ikoni"></i>
-            </div>
-
-
-        <div class="lohko eiaktiivinen">
-            <p><strong>#2 Datatalous, Minna Rantanen</strong></p>
-            <p>Tämä tehtävä ei ole vielä aktiivinen. Se aukeaa kun olet suorittanut edeltävät tehtävät.</p>
-            <i class="bi bi-slash-circle ikoni"></i>
-        </div>
-
-            <div class="lohko eiaktiivinen">
-            <p><strong>#3 Datatalous, Minna Rantanen</strong></p>
-            <p>Tämä tehtävä ei ole vielä aktiivinen. Se aukeaa kun olet suorittanut edeltävät tehtävät.</p>
-            <i class="bi bi-slash-circle ikoni"></i>
-        </div>
-
-            <div class="lohko eiaktiivinen">
-            <p><strong>#4 Datatalous, Minna Rantanen</strong></p>
-            <p>Tämä tehtävä ei ole vielä aktiivinen. Se aukeaa kun olet suorittanut edeltävät tehtävät.</p>
-            <i class="bi bi-slash-circle ikoni"></i>
-        </div>
-
-        <div class="lohko eiaktiivinen">
-            <p><strong>#5 Datatalous, Minna Rantanen</strong></p>
-            <p>Tämä tehtävä ei ole vielä aktiivinen. Se aukeaa kun olet suorittanut edeltävät tehtävät.</p>
-            <i class="bi bi-slash-circle ikoni"></i>
-        </div>
-
-        <div class="lohko eiaktiivinen">
-            <p><strong>#6 Datatalous, Minna Rantanen</strong></p>
-            <p>Tämä tehtävä ei ole vielä aktiivinen. Se aukeaa kun olet suorittanut edeltävät tehtävät.</p>
-            <i class="bi bi-slash-circle ikoni"></i>
-        </div>
-    </div>
     </main>
 
-      
-  </body>
-</html>
+    <footer class="container">
+      <small>Tyylitiedostojen pohjana MIT-lisensoitu <a href="https://picocss.com">Pico CSS</a>.</small>
+    </footer> 
+
+
+</body></html>
